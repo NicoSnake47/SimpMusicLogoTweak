@@ -400,7 +400,7 @@ fun MediumMiniLayout(
                 }
 
                 // Lyrics display (if available)
-                if (false && lyricsData != null && !lyricsData.lyrics.error && lyricsData.lyrics.lines != null) {
+                if (lyricsData != null && !lyricsData.lyrics.error && lyricsData.lyrics.lines != null && false) {
                     val lyricsNowMs = rememberLyricsNowMs(timeline)
                     val currentLine =
                         remember(lyricsNowMs) {
@@ -554,7 +554,7 @@ fun SquareMiniLayout(
             Spacer(modifier = Modifier.height(8.dp))
 
             // Lyrics display (if available)
-            if (false && lyricsData != null && !lyricsData.lyrics.error && lyricsData.lyrics.lines != null) {
+            if (lyricsData != null && !lyricsData.lyrics.error && lyricsData.lyrics.lines != null && false) {
                 val lyricsNowMs = rememberLyricsNowMs(timeline)
                 val currentLine =
                     remember(lyricsNowMs) {
@@ -906,7 +906,7 @@ fun ExpandedMiniLayout(
             }
 
             // Lyrics display below thumbnail row
-            if (false && lyricsData != null && !lyricsData.lyrics.error && lyricsData.lyrics.lines != null) {
+            if (lyricsData != null && !lyricsData.lyrics.error && lyricsData.lyrics.lines != null && false) {
                 val lyricsNowMs = rememberLyricsNowMs(timeline)
                 val currentLine =
                     remember(lyricsNowMs) {
